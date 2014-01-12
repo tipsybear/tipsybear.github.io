@@ -19,7 +19,7 @@ layout: default
       <li><span class="glyphicon glyphicon-user"></span> {{ page.author }}</li>
       <li><span class="glyphicon glyphicon-tags"></span>  {{ page.tags | array_to_sentence_string }}</li>
       <li class="pull-right"><span class="glyphicon glyphicon-comment"></span>
-      <a href="{{ site.url }}{{page.url }}#disqus_thread">No Comments</a></li>
+      <a data-disqus-identifier="{{ page.id }}" href="{{ site.url }}{{page.url }}#disqus_thread">No Comments</a></li>
     </ul>
   </div>
 
