@@ -1,0 +1,29 @@
+/* Custom styles for TipsyBear.com */
+
+html,
+body {
+    height: 100%;
+}
+
+/* Sticky Footer */
+
+#wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -76px;
+    padding: 0 0 76px;
+}
+
+#content {
+    padding: 76px 15px 0;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    height: 76px;
+    padding: 8px 15px;
+}
+
+footer p {
+    margin: 0;
+}
