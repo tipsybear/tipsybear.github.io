@@ -5,7 +5,7 @@ This repository contains the pages and data for the Tipsy Bear Studios
 website. It is automatically transformed by
 [Jekyll][jekyll] into a static site when the
 repository is pushed to GitHub (thanks to
-[Github Pages][github-pages]. We find this incredibly useful,
+[Github Pages][github-pages]). We find this incredibly useful,
 we can work on pages/the site together without having to worry about
 remote servers and databases. It also gives us collaboration flexibility
 AND versioning without a Content Management System (CMS),
