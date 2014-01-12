@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Site Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Meta -->
+    <title>{{ page.title }} &spades; Tipsy Bear Studios</title>
+    <meta name="author" content="{{ page.author }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="description" content="{{ page.description }}">
+
+    <!-- Shortcut Icons -->
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    {% unless page.no_header %}
+        {% include header.html %}
+    {% endunless %}
+
+    {{ content }}
+
+    {% unless page.no_footer %}
+        {% include footer.html %}
+    {% endunless %}
+
+    <!-- JavaScript at the bottom of the page for faster loading -->
+    <script src="/js/libs/jquery.js"></script>
+    <script src="/js/libs/underscore.js"></script>
+    {% include analytics.html %}
+</body>
+</html>

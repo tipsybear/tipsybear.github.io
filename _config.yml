@@ -1,0 +1,12 @@
+safe: true
+include:
+- .htaccess
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- CNAME
+- LICENSE
+timezone: America/New_York
+lsi: false
+pygments: true
