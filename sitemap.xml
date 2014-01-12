@@ -29,4 +29,10 @@ layout: nil
     <priority>0.5</priority>
    </url>
    {% endfor %}
+   <url>
+     <loc>{{ site.url }}/contact/</loc>
+     <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+     <changefreq>daily</changefreq>
+     <priority>0.3</priority>
+   </url>
 </urlset>
