@@ -27,3 +27,7 @@ footer {
 footer p {
     margin: 0;
 }
+
+.article {
+    padding: 20px 0 5px 0;
+}

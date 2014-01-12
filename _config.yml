@@ -11,3 +11,4 @@ timezone: America/New_York
 lsi: false
 pygments: true
 url: http://www.tipsybear.com
+permalink: /:categories/:title/
