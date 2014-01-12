@@ -13,12 +13,12 @@
     <meta name="description" content="{{ page.description }}">
 
     <!-- Shortcut Icons -->
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="/css/tipsybear.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/tipsybear.css">
 </head>
 <body>
   <div id="wrapper">
@@ -40,9 +40,9 @@
   {% endunless %}
 
   <!-- JavaScript at the bottom of the page for faster loading -->
-  <script src="/js/libs/jquery.js"></script>
-  <script src="/js/libs/underscore.js"></script>
-  <script src="js/libs/bootstrap.js"></script>
+  <script src="{{ site.url }}/js/libs/jquery.js"></script>
+  <script src="{{ site.url }}/js/libs/underscore.js"></script>
+  <script src="{{ site.url }}/js/libs/bootstrap.js"></script>
   {% include analytics.html %}
 </body>
 </html>

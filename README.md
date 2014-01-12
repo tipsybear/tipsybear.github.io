@@ -14,6 +14,14 @@ which [Allen][allen] HATES to build!
 This site was made with &spades; by [@bbengfort][ben] and
 [@looselycoupled][allen].
 
+## Resources ##
+
+If we need more functionality we are using the following:
+
+* [SimpleForm](http://getsimpleform.com/) -- emails us form data
+* [Disqus](http://disqus.com/) -- for comments and discussion
+* [Google Analytics](http://www.google.com/analytics/) -- for site tracking and analytics
+
 ## License ##
 
 The following directories and their contents are &copy; Copyright
