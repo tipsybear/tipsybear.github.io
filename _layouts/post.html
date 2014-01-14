@@ -2,30 +2,34 @@
 layout: page
 ---
 
-<div class="post">
-  <div class="headline">
-    <h2>{{ page.title }}</h2>
-    <p class="byline">By {{ page.author }}</p>
-  </div><!-- headline ends -->
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="post">
+      <div class="headline">
+        <h2>{{ page.title }}</h2>
+        <p class="byline">By {{ page.author }}</p>
+      </div><!-- headline ends -->
 
-  <div class="article">
-    {{ content }}
-  </div><!-- article ends -->
+      <div class="article">
+        {{ content }}
+      </div><!-- article ends -->
 
-  <hr class="end-article" />
-  <div class="post-meta">
-    <ul class="list-inline list-unstyled">
-      <li><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_string }}</li>
-      <li><span class="glyphicon glyphicon-user"></span> {{ page.author }}</li>
-      <li><span class="glyphicon glyphicon-tags"></span>  {{ page.tags | array_to_sentence_string }}</li>
-      <li class="pull-right"><span class="glyphicon glyphicon-comment"></span>
-      <a data-disqus-identifier="{{ page.id }}" href="{{ site.url }}{{page.url }}#disqus_thread">No Comments</a></li>
-    </ul>
+      <hr class="end-article" />
+      <div class="post-meta">
+        <ul class="list-inline list-unstyled">
+          <li><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_string }}</li>
+          <li><span class="glyphicon glyphicon-user"></span> {{ page.author }}</li>
+          <li><span class="glyphicon glyphicon-tags"></span>  {{ page.tags | array_to_sentence_string }}</li>
+          <li class="pull-right"><span class="glyphicon glyphicon-comment"></span>
+          <a data-disqus-identifier="{{ page.id }}" href="{{ site.url }}{{page.url }}#disqus_thread">No Comments</a></li>
+        </ul>
+      </div>
+
+      <hr class="end-article" />
+      <div class="discussion">
+        <h3>Discussion</h3>
+        {% include disqus.html %}
+      </div><!-- discussion ends -->
+    </div>
   </div>
-
-  <hr class="end-article" />
-  <div class="discussion">
-    <h3>Discussion</h3>
-    {% include disqus.html %}
-  </div><!-- discussion ends -->
 </div>

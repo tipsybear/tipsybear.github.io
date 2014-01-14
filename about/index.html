@@ -8,7 +8,85 @@ label: about
 ---
 
   <div class="row">
-    <div class="col-md-12">
-      <p class="text-center">About Us</p>
+    <div class="col-md-10 col-md-offset-1">
+      <h1>What is a Tipsy Bear?</h1>
+      <p class="lead">This site originally started as a beer brewing blog.
+      We wanted to do data science projects, and we figured it was an
+      awesome name, thus here we are! We like bourbon, data science, and
+      long walks on the beach. And making really cool things.</p>
+
+      <h2>The Folks of Tipsy Bear</h2>
+      {% for member in site.data.members %}
+      <div class="bio row" style="margin-top: 20px;">
+        <div class="col-md-3">
+          <img class="img img-thumbnail" src="{{ member.image }}"/>
+        </div>
+        <div class="col-md-9">
+          <h3 style="margin-top: 0">{{ member.name }}</h3>
+          <ul class="social-icons list-unstyled list-inline">
+            <li>
+              <a href="https://linkedin.com/in/{{ member.linkedin }}">
+                <span class="fa fa-linkedin-square"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/in/{{ member.github }}">
+                <span class="fa fa-github-square"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/in/{{ member.twitter }}">
+                <span class="fa fa-twitter-square"></span>
+              </a>
+            </li>
+          </ul>
+          <p>{{ member.bio }}</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      {% endfor %}
+
+      <h2>The Webpage of Tipsy Bear</h2>
+      <p>This simple website was built quickly because of the hard work of
+      a lot of people who develop open source projects. We want to thank
+      them for making it possible for us to have a website while we do data
+      science projects. In return, our projects are also open source! If
+      you would like to use the tools that we're using, then here are the
+      links back to our sources.</p>
+
+      <h4>Hosting</h4>
+      <p><a href="https://github.com/">Github</a> hosts all of our code and
+      also provides hosting for this site via <a href="http://pages.github.com/">Github
+      Pages</a>. This page is built when we push a commit into our repository
+      with <a href="http://jekyllrb.com/">Jekyll</a>, a pretty cool static page blog generator.</p>
+      <p><a href="http://disqus.com/">Disqus</a> does all the comment handling and discussion
+      moderation for us, which is pretty cool since it's for free. Our contact form (and any
+      other form you may see on this website) is powered with <a href="http://getsimpleform.com/">Simple Form</a>.
+
+      <h4>Design</h4>
+      <p>It's probably pretty obvious, but this page was built with
+      <a href="http://getbootstrap.com/">Bootstrap</a>, which we love for our web
+      applications (we're not really designers). The icons come from two places:
+      <a href="http://fontawesome.io/">Font Awesome</a> and <a href="http://glyphicons.com/">Glyphicons</a>.</p>
+
+      <p>The Metro D.C. wallpaper we use in our jumbotron on the front page is from
+      <a href="http://www.kulfoto.com/interesting-things/wallpaper/1/11839/washington-d-c-metro">KULfoto</a>.
+      The bear silhoutte that we're using as our tiny logo is from <a href="http://vector-magz.com/animals/bear-silhouette-item-5/">Vector-magz.com</a>.</p>
+
+      <p>I hope that's everyone- thank you guys all so much!</p>
+
+      <h3>Copyright and Permissions</h3>
+      <p>We write open source software, and our code is licensed under the
+      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+      This is a permissive license that we hope you will use well to build amazing
+      things. You can use it in your code with or with attribution (we appreciate it, though)
+      for any kind of use (commercial or otherwise), and you can even patent code
+      (good luck) with our code in it.</p>
+
+      <p>As for the content of this site, except where explicitly mentioned, we
+      reserve all rights to the copyright. We would like to say things whose sole
+      attribution will be to ourselves. If you'd like to use anything, just get
+      in touch, I'm sure we'll say yes.</p>
+
     </div>
   </div>

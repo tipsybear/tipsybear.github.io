@@ -24,7 +24,7 @@ all the domains you already own! (Which by the way, if you want to do a
 project with me, I've got "tacticalchicken.com", "splosionfish.com" and
 "musetwelve" all available if interested!)
 
-Tipsy Bear had originally been a blog about my chemistry facination,
+Tipsy Bear had originally been a blog about my chemistry fascination,
 particularly the fermentation of barely. Like I said, Andy took that title
 from me, and I loaned most of my brew kit away already anyway. The old blog
 is on my server, but not being used.
