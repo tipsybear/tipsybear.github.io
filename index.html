@@ -8,21 +8,32 @@ label: home
 ---
 
   <div class="jumbotron">
-    <h1 class="text-center">Well, this is happening!</h1>
+    <div class="container">
+      <div class="banner-text">
+        <h1>Clever Data Science Projects with a Twist</h1>
+        <hr />
+        <p>Tipsy Bear Studios is a Bloomingdale data science workshop in Washington, D.C.
+        We build data-driven applications for fun and with style. Also, we drink bourbon,
+        and you're more than welcome to join us!</p>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-      {% for post in site.posts %}
-      <h3>{{ post.title }}</h3>
-      <p class="lead">{{ post.author }}</p>
-      <ul class="list-inline list-unstyled">
-        <li><span class="glyphicon glyphicon-calendar"></span> {{ post.date | date_to_string }}</li>
-        <li><span class="glyphicon glyphicon-tag"></span> {{ post.category }}</li>
-        <li><span class="glyphicon glyphicon-comment"></span>
-        <a data-disqus-identifier="{{ post.id }}" href="{{ site.url }}{{ post.url }}#disqus_thread">No Comments</a></li>
-      </ul>
-      {{ post.excerpt | markdownify }}
-      <a href="{{ post.url }}" class="btn btn-default">Read More</a>
-      {% endfor %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        {% for post in site.posts %}
+        <h3>{{ post.title }}</h3>
+        <p class="lead">{{ post.author }}</p>
+        <ul class="list-inline list-unstyled">
+          <li><span class="glyphicon glyphicon-calendar"></span> {{ post.date | date_to_string }}</li>
+          <li><span class="glyphicon glyphicon-tag"></span> {{ post.category }}</li>
+          <li><span class="glyphicon glyphicon-comment"></span>
+          <a data-disqus-identifier="{{ post.id }}" href="{{ site.url }}{{ post.url }}#disqus_thread">No Comments</a></li>
+        </ul>
+        {{ post.excerpt | markdownify }}
+        <a href="{{ post.url }}" class="btn btn-default">Read More</a>
+        {% endfor %}
+      </div>
     </div>
   </div>
